@@ -32,18 +32,18 @@ body {
   .sidebar .list-group-item:hover{
     text-decoration: none;
     color: #ffffff;
-    background-color: #003258;
+    background-color: #0770e8;
   }
   .sidebar .list-group-item.active{
     text-decoration: none;
     color: #ffffff;
-    background-color: #003258 !important;
+    background-color: #0770e8!important;
   }
   .sidebar .list-group-item:hover:nth-child(1), .sidebar .list-group-item.active:nth-child(1){
     background-image: url(../images/home-hover.svg);
     background-repeat: no-repeat;
     background-position: 35px 16px;
-    background-color: #003258;
+    background-color: #0770e8;
     
   }
 
@@ -57,7 +57,7 @@ body {
     background-image: url(../images/banking-hover.svg);
     background-repeat: no-repeat;
     background-position: 35px 16px;
-    background-color: #003258;
+    background-color: #0770e8;
     
   }
 
@@ -71,7 +71,7 @@ body {
     background-image: url(../images/payroll-hover.svg);
     background-repeat: no-repeat;
     background-position: 35px 16px;
-    background-color: #003258;
+    background-color: #0770e8;
     
   }
 
@@ -85,7 +85,7 @@ body {
     background-image: url(../images/cards-hover.svg);
     background-repeat: no-repeat;
     background-position: 35px 16px;
-    background-color: #003258;
+    background-color: #0770e8;
     
   }
 
@@ -100,36 +100,36 @@ body {
     background-image: url(../images/invoices-hover.svg);
     background-repeat: no-repeat;
     background-position: 35px 12px;
-    background-color: #003258;
+    background-color: #0770e8;
     background-size: 22px;
     
   }
 
-  .sidebar .list-group-item:nth-child(6){
+  .sidebar .list-group-item:nth-child(7){
     background-image: url(../images/gst.svg);
     background-repeat: no-repeat;
     background-position: 35px 16px;
     
   }
-  .sidebar .list-group-item:hover:nth-child(6), .sidebar .list-group-item.active:nth-child(6){
+  .sidebar .list-group-item:hover:nth-child(7), .sidebar .list-group-item.active:nth-child(7){
     background-image: url(../images/gst-hover.svg);
     background-repeat: no-repeat;
     background-position: 35px 16px;
-    background-color: #003258;
+    background-color: #0770e8;
     
   }
 
-  .sidebar .list-group-item:nth-child(7){
+  .sidebar .list-group-item:nth-child(6){
     background-image: url(../images/travel.svg);
     background-repeat: no-repeat;
     background-position: 35px 16px;
     
   }
-  .sidebar .list-group-item:hover:nth-child(7), .sidebar .list-group-item.active:nth-child(7){
+  .sidebar .list-group-item:hover:nth-child(6), .sidebar .list-group-item.active:nth-child(6){
     background-image: url(../images/travel-hover.svg);
     background-repeat: no-repeat;
     background-position: 35px 16px;
-    background-color: #003258;
+    background-color: #0770e8;
     
   }
 
@@ -144,7 +144,7 @@ body {
     background-image: url(../images/reports-hover.svg);
     background-repeat: no-repeat;
     background-position: 35px 16px;
-    background-color: #003258;
+    background-color: #0770e8;
     background-size: 22px;
     
   }
@@ -157,12 +157,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
+    font-size: 16px;
   }
 
+div.content span {
+    color: #0745E5;
+    margin-left: 
+4px
+;
+}
+
   /* .list-group-item.active{
-    background-color: #003258;
-    border-color: #003258;
+    background-color: #0770e8;
+    border-color: #0770e8;
   } */
   @media screen and (max-width: 700px) {
     .sidebar {
