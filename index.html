@@ -1,1 +1,98 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href="css/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<script src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+
+	<script src="
+https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+	</script>
+
+	<script src="
+https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+	</script>
+</head>
+<body>
+
+<div class="sidebar">
+  <a class="list-group-item active" href="#home"><img src="images/home.svg"> Home</a>
+  <a class="list-group-item" href="#banking"><img src="images/banking.svg"> Banking</a>
+  <a class="list-group-item" href="#payroll"><img src="images/payroll.svg"> Payroll</a>
+  <a class="list-group-item" href="#cards"><img src="images/cards.svg"> Cards</a>
+  <a class="list-group-item" href="#invoices"><img src="images/invoices.svg"> Invoices</a>
+  <a class="list-group-item" href="#gst"><img src="images/gst.svg"> GST</a>
+  <a class="list-group-item" href="#travel"><img src="images/travel.svg"> Travel</a>
+  <a class="list-group-item" href="#reports"><img src="images/reports.svg"> Reports</a>
+</div>
+<div class="content">
+  This page is reserved for Home
+</div>
+<div class="content" id="home">
+ This page is reserved for Home
+</div>
+<div class="content" id="banking">
+ This page is reserved for Banking
+</div>
+<div class="content" id="payroll">
+ This page is reserved for Payroll
+</div>
+<div class="content" id="cards">
+ This page is reserved for Cards
+</div>
+<div class="content" id="invoices">
+ This page is reserved for Invoices
+</div>
+<div class="content" id="gst">
+ This page is reserved for GST
+</div>
+<div class="content" id="travel">
+  <iframe src="https://devdemo.eva.travel/login?ViewType=3" style="width:100%; height: 100vh; border: 0; padding: 0;" title="Iframe Example"></iframe>
+</div>
+<div class="content" id="reports">
+ This page is reserved for Reports
+</div>
+<script>
+          $(".list-group-item").click(function() {
+
+			
+			// Select all list items
+			var listItems = $(".list-group-item");
+			console.log(listItems)
+			// Remove 'active' tag for all list items
+			for (let i = 0; i < listItems.length; i++) {
+				listItems[i].classList.remove("active");
+			}
+			
+			// Add 'active' tag for currently selected item
+			this.classList.add("active");
+console.log(this.classList)
+		});
+   // function openCity(evt, cityName) {
+  //    var i, tabcontent, tablinks;
+   //   tabcontent = document.getElementsByClassName("tabcontent");
+  //    for (i = 0; i < tabcontent.length; i++) {
+  //      tabcontent[i].style.display = "none";
+ //     }
+  //    tablinks = document.getElementsByClassName("tablinks");
+  //    for (i = 0; i < tablinks.length; i++) {
+  //      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  //    }
+  //    document.getElementById(cityName).style.display = "block";
+  //    evt.currentTarget.className += " active";
+  //  }
+    
+    // Get the element with id="defaultOpen" and click on it
+  //  document.getElementById("defaultOpen").click();
+</script>
+</body>
+</body>
+</html>
+
