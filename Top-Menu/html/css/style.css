@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    overflow: hidden;
+  }
+  
+/* ---------- Index ---------- */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-left {
+  padding: 10px;
+  flex: 50%;
+}
+.item-left p{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.item-right {
+  padding: 10px;
+  flex: 50%;
+}
+.item-right ul{
+  margin: 0;
+  padding: 0;
+}
+.item-right ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0px 20px 20px 20px;
+}
+.item-right ul li a{
+  /* background: #000; */
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  line-height: 80px;
+  color: #0770e8;
+  text-decoration: none;
+  border: 1px solid #0770e8;
+}
+.item-right ul li a:hover{
+  background: #0770e8;
+  color: #ffffff;
+}
+/* ---------- Index End---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+  margin: 0;
+  padding: 12px 0px 20px 0px;
+  width: 100%;
+  display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+.sidebar .slider-right{
+    float: right;
+    padding-right: 30px;
+}
+  .logo{
+    text-align: center;
+    padding: 0px 10px;
+    display: inline-block;
+    float: left;
+  }
+  .logo img{
+    width: 75%;
+  }
+  .sidebar .list-group-item{
+    display: inline-block;
+  }
+  .sidebar a.list-group-item:hover{
+    text-decoration: none;
+    color: #0770e8;
+  }
+  .sidebar a.list-group-item.active{
+    color: #0770e8;
+  }
+  .sidebar a.list-group-item {
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0px 6px;
+  }
+
+
+
+
+
+  
+  div.content {
+    padding: 1px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+  }
+  div.content span{
+      color: #0770e8;
+      margin-left: 4px;
+  }
+  /* .list-group-item.active{
+    background-color: #0770e8;
+    border-color: #0770e8;
+  } */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
