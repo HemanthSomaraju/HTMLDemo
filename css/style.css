@@ -48,6 +48,10 @@ body {
   color: #0745E5;
   text-decoration: none;
   border: 1px solid #0745E5;
+  margin: 0 auto;
+}
+.item-right ul li p{
+  font-size: 13px;
 }
 .item-right ul li a:hover{
   background: #0745E5;
