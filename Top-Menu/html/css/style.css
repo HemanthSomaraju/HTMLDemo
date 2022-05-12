@@ -82,7 +82,7 @@ body {
 
 .sidebar {
   margin: 0;
-  padding: 10px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
   width: 100%;
   display: flex;
     justify-content: space-between;
@@ -102,7 +102,8 @@ body {
     float: left;
   }
   .logo img{
-    width: 75%;
+    width: 50%;
+    margin-top: 5px;
   }
   .sidebar .list-group-item{
     display: inline-block;

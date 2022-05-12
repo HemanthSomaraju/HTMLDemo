@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">	</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div style="position: relative; width: 30%; margin: 0 auto; top: 0; overflow: hidden;background: #ffffff;">
+  
+  <nav role="navigation">
+    <div id="menuToggle">
+      <div style="position: absolute; top: 0; background: #fff; height: 100vh; width: 470px; left: -480px; z-index: 9;background: #F5F6FA;"> </div>
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <ul id="menu">
+        <li>
+          <div class="sidebar" id="sidebar">
+            <div class="logo">
+              <img src="images/logo.svg">
+            </div>
+            <a class="list-group-item active" href="#home">
+              Home</a>
+            <a class="list-group-item" href="#banking">
+              Banking</a>
+            <a class="list-group-item" href="#payroll">
+              Payroll</a>
+            <a class="list-group-item" href="#cards">
+              Cards</a>
+            <a class="list-group-item" href="#invoices">
+              Invoices</a>
+            <a class="list-group-item" id="btn" href="#travel">
+              Travel</a>
+            <a class="list-group-item" href="#gst">
+              GST</a>
+
+            <a class="list-group-item" href="#reports">
+              Reports
+            </a>
+            <a class="list-group-item" href="../../index.html">
+              Live Demo
+            </a>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+
+  <div class="content" id="home">
+    <div style="text-align:center; width: 60%; line-height: 25px;">
+      <p>This page is reserved for <span>Home</span></p>
+      <p style="font-size:14px;">This page comes from your own application. It will offer your primary services to your
+        existing customers. Click on the Travel menu to experience how Travel can be seamlessly added to your existing
+        application. You can increase your revenue by offering additional services like Travel to your customers.</p>
+    </div>
+  </div>
+  <div class="content" id="banking">
+    <div style="text-align:center; width: 60%; line-height: 25px;">
+      <p>This page is reserved for <span>Banking</span></p>
+      <p style="font-size:14px;">This page comes from your own application. It will offer your primary services to your
+        existing customers. Click on the Travel menu to experience how Travel can be seamlessly added to your existing
+        application. You can increase your revenue by offering additional services like Travel to your customers.</p>
+    </div>
+  </div>
+  <div class="content" id="payroll">
+    <div style="text-align:center; width: 60%; line-height: 25px;">
+      <p>This page is reserved for <span>Payroll</span></p>
+      <p style="font-size:14px;">This page comes from your own application. It will offer your primary services to your
+        existing customers. Click on the Travel menu to experience how Travel can be seamlessly added to your existing
+        application. You can increase your revenue by offering additional services like Travel to your customers.</p>
+    </div>
+  </div>
+  <div class="content" id="cards">
+    <div style="text-align:center; width: 60%; line-height: 25px;">
+      <p>This page is reserved for <span>Cards</span></p>
+      <p style="font-size:14px;">This page comes from your own application. It will offer your primary services to your
+        existing customers. Click on the Travel menu to experience how Travel can be seamlessly added to your existing
+        application. You can increase your revenue by offering additional services like Travel to your customers.</p>
+    </div>
+  </div>
+  <div class="content" id="invoices">
+    <div style="text-align:center; width: 60%; line-height: 25px;">
+      <p>This page is reserved for <span>Invoices</span></p>
+      <p style="font-size:14px;">This page comes from your own application. It will offer your primary services to your
+        existing customers. Click on the Travel menu to experience how Travel can be seamlessly added to your existing
+        application. You can increase your revenue by offering additional services like Travel to your customers.</p>
+    </div>
+  </div>
+  <div class="content" id="gst">
+    <div style="text-align:center; width: 60%; line-height: 25px;">
+      <p>This page is reserved for <span>GST</span></p>
+      <p style="font-size:14px;">This page comes from your own application. It will offer your primary services to your
+        existing customers. Click on the Travel menu to experience how Travel can be seamlessly added to your existing
+        application. You can increase your revenue by offering additional services like Travel to your customers.</p>
+    </div>
+  </div>
+  <div class="content" id="travel">
+    <iframe id="iframeid" src="https://devdemo.eva.travel/login?ViewType=3"
+      style="width:100%; height: 90vh; border: 0; padding: 0; margin-top: 37px;" title="Iframe Example"></iframe>
+    <div class="overlay"></div>
+  </div>
+  <div class="content" id="reports">
+    <div style="text-align:center; width: 60%; line-height: 25px;">
+      <p>This page is reserved for <span>Reports</span></p>
+      <p style="font-size:14px;">This page comes from your own application. It will offer your primary services to your
+        existing customers. Click on the Travel menu to experience how Travel can be seamlessly added to your existing
+        application. You can increase your revenue by offering additional services like Travel to your customers.</p>
+    </div>
+  </div>
+
+
+</div>
+  
+
+ 
+
+  <script>
+    $(".list-group-item").click(function () {
+
+
+      // Select all list items
+      var listItems = $(".list-group-item");
+      // Remove 'active' tag for all list items
+      for (let i = 0; i < listItems.length; i++) {
+        listItems[i].classList.remove("active");
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
+      // Add 'active' tag for currently selected item
+      this.classList.add("active");
+      
+      function reload() {
+        document.getElementById('iframeid').src += '';
+      }
+      btn.onclick = reload;
+
+
+    });
+
+  </script>
+  <!-- <script>
+    function openNav() {
+      document.getElementById("menuToggle").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("menuToggle").style.width = "0";
+    }
+  </script> -->
+
+</body>
+</body>
+
+</html>
